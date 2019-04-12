@@ -11,7 +11,7 @@ public class Exercicio24 {
 		System.out.println("Digite o seu salário");
 		salario = leia.nextDouble();
 		if(salario < 998) {
-			System.out.println("Digite um salário superior ou igual a R$:998,00");
+			System.out.println("Salário inválida \n tem que ser digitado um salário superior ou igual a R$:998,00");
 		}else {
 		
 			System.out.println(" 1. Calcular o novo salário.");
@@ -23,13 +23,13 @@ public class Exercicio24 {
 			switch (op) {
 			case 1:
 				if (salario < 1008.00) {
-					System.out.println("Novo salário com aumento de 240 R$:"+(salario + 240));
+					System.out.printf("Novo salário com aumento de 240 R$:%.2f",(salario + 240));
 				}else if( (salario >=1008.00) && (salario <= 2000.00)) {
-					System.out.println("Novo salário com aumento de 430 R$:"+(salario + 430));
+					System.out.printf("Novo salário com aumento de 430 R$:%.2f",(salario + 430));
 				}else if( (salario > 2000.00) && (salario <= 7000.00)) {
-					System.out.println("Novo salário com aumento de 500 R$:"+(salario + 500));
+					System.out.printf("Novo salário com aumento de 500 R$:%.2f",(salario + 500));
 				}else {
-					System.out.println("Novo salário com aumento de 630 R$:"+(salario + 630));
+					System.out.printf("Novo salário com aumento de 630 R$:%.2f",(salario + 630));
 				}
 				break;
 			case 2:
@@ -46,7 +46,23 @@ public class Exercicio24 {
 				}
 				break;
 			case 3:
-				if( salario)
+				if( salario <= 4000.00) {
+					System.out.println("Analista de Programação Júniro");
+				}else if((salario > 4000.00)&&(salario <= 7500.99)){
+					
+					System.out.println("Analista de Programação Pleno");
+				}else if(( salario > 7500.99)&&(salario <=10000.00)) {
+					System.out.println("Analista de Programação Sênior");
+				}else {
+					System.out.println("Gerente");
+				}
+			break;
+			case 4:
+				System.out.println("Saindo...");
+				break;
+			default:
+				System.out.println("Opção inválida");
+				break;
 			}
 		}
 		
