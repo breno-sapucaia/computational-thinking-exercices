@@ -1,0 +1,6 @@
+package exercicios;
+
+public class Exercicio12 {
+	
+	public void executar() {}
+}

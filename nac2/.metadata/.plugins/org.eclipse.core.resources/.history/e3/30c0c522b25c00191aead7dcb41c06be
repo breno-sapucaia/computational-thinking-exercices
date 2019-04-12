@@ -1,0 +1,21 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+	private double reais;
+
+	public double getReais() {
+		return reais;
+	}
+
+	public void setReais(double reais) {
+		this.reais = reais;
+	}
+	
+	public void executar() {
+		Scanner leia = new Scanner(System.in);
+		System.out.print("Digite o valor em R$:");
+		setReais(Double.parseDouble(leia.nextLine()));
+	}
+}

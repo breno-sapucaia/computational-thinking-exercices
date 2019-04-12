@@ -1,0 +1,21 @@
+package exercicios;
+import java.util.Scanner;
+public class Exercicio1 {
+	private double num;
+	Scanner leia = new Scanner(System.in);
+	
+	public void setNum(double num) {
+		this.num = num;
+	}
+	public double getNum() {
+		return this.num;
+	}
+	
+	public void executar() {
+		
+		System.out.println("Digite o número desejado");
+		setNum(Double.parseDouble(leia.nextLine()));
+		System.out.println("O quadrádo do numero é igual a: " + (getNum() * getNum()));
+	
+	}
+}

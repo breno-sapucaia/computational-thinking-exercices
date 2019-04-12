@@ -1,0 +1,16 @@
+package exercicios;
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in)
+		int op;
+		System.out.println("selecione o exercicio:");
+		leia(op);
+		
+		Exercicio1 ex1 = new Exercicio1();
+		ex1.executar();
+	}
+
+}

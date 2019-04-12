@@ -1,0 +1,13 @@
+package exercicios;
+
+public class Exercicio21 {
+	public int n1;
+	public int n2;
+	public int n3;
+	public String aux;
+	
+	public void executar() {
+		Scanner leia = new Scanner(System.in);
+		
+	}
+}

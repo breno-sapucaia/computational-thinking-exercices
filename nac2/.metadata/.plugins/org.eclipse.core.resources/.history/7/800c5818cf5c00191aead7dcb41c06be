@@ -1,0 +1,10 @@
+package exercicios;
+
+public class Exercicio17 {
+	public int mes;
+	
+	public void executar() {
+		Scanner leia = new Scanner(System.in);
+		
+	}
+}

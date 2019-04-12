@@ -1,0 +1,22 @@
+package exercicios;
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		int op;
+		System.out.println("selecione o exercicio:");
+		System.out.println("1 - x²");
+		op = Integer.parseInt(leia.nextLine());
+			switch (op) {
+				case 1: 
+					Exercicio1 ex1 = new Exercicio1();
+					ex1.executar();
+					break;
+				default:
+					System.out.println("opção inválida");
+					break;
+			}
+	}
+}

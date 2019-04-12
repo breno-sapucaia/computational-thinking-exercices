@@ -1,0 +1,11 @@
+package exercicios;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Exercicio1 ex1 = new Exercicio1();
+		ex1.executar();
+	}
+
+}
