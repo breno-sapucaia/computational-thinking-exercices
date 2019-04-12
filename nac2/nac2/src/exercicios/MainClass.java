@@ -28,6 +28,9 @@ public class MainClass {
 		System.out.println("19 - Crefisa do Recife");
 		System.out.println("20 - Passagens");
 		System.out.println("21 - Digito verificador");
+		System.out.println("22 - Exericicio extra 1");
+		System.out.println("23 - Exercicio extra 2");
+		System.out.println("24 - Exercicio extra 3");
 		op = Integer.parseInt(leia.nextLine());
 			switch (op) {
 				case 1: 
@@ -113,6 +116,18 @@ public class MainClass {
 				case 21:
 					Exercicio21 ex21 = new Exercicio21();
 					ex21.executar();
+					break;
+				case 22:
+					Exercicio22 ex22 = new Exercicio22();
+					ex22.executar();
+					break;
+				case 23:
+					Exercicio23 ex23 = new Exercicio23();
+					ex23.executar();
+					break;
+				case 24:
+					Exercicio24 ex24 = new Exercicio24();
+					ex24.executar();
 					break;
 				default:
 					System.out.println("opção inválida");
